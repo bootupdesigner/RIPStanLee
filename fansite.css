@@ -1,4 +1,104 @@
-#welcome{
-  font-size: 48px;
-  color: rgb(88, 196, 234);
+*{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+  font-size: 16px;
+}
+/*** this is the header ***/
+#welcome {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  background: #000000;
+  border-bottom: 4px solid #800000;
+}
+.header-title {
+  color: #800000;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.header-tagline {
+  text-align: center;
+  margin-top: 0px;
+  color: #ffffff;
+}
+/*** agents of shield banner ***/
+#banner {
+  background-color: #800000;
+}
+img.spidy {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+h2.spidy-para {
+  text-align: center;
+  margin: auto 0px;
+  color: #ffffff;
+}
+/*** a few of my favorite ***/
+#favorites {
+  margin: 5px 0px;
+  border: 2px solid #800000;
+  box-shadow: 2px 2px #000000;;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.left1 {
+  margin: 5px auto;
+  grid-column: 1;
+  width: 100%;
+}
+.right1 {
+  margin: 5px auto;
+  grid-column: 2;
+  width: 100%
+}
+.comp {
+  object-fit: cover;
+  width: 90%;
+  margin: auto 5px;
+}
+.text {
+  margin: 5px 5px;
+}
+/*** Iron man trailer ***/
+#video {
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+}
+h2.video {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+iframe {
+  display: block;
+  margin: 10px auto;
+}
+
+/*** this is the footer ***/
+#footer {
+  bottom: 0;
+  display: grid;
+  height: 50px;
+  grid-template-columns: 100%;
+  background-color: #000000;
+}
+button {
+  background-color: #800000;
+  color: #fff;
+  padding: 30px auto;
+}
+a.button {
+  margin: auto 0px;
+  padding: auto 0px;
+  display: flex;
+  justify-content: center;
 }
